@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir o site em diferentes dispositivos para textar a dinâmica do site quando uma tela é maior e quando a tela é pequena.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="imagem grande">
+    </picture>
+    <br>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/Jojo-P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/Jojo-M.png" type="image/png">
+        <img src="imagens/Jojo-G.png" alt="jojo grandao">
+    </picture>
+    <br>
+    <h1>Trabalhando com audio</h1>
+    <p>Apreedendo a colocar audios nos sites com o HTML5.</p>
+    <audio src="midias/y2mate.com - PROBLEMA.mp3" controls autoplay> </audio>
+    <br>
+    <audio autoplay controls preload="metadata">
+        <source src="midias/y2mate.com - REAL MADRID CAMPEÃO DA CHAMPIONS Paródia Suíte 14 Henrique Diego ft Mc Guimê.mp3" type="audio/mpeg">
+        <source src="midias/y2mate.com - REAL MADRID CAMPEÃO DA CHAMPIONS Paródia Suíte 14 Henrique Diego ft Mc Guimê (online-audio-converter.com).ogg" type="audio/ogg">
+        <source src="midias/y2mate.com - REAL MADRID CAMPEÃO DA CHAMPIONS Paródia Suíte 14 .wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não está consegindo o rodar o audio <a href="midias/y2mate.com - REAL MADRID CAMPEÃO DA CHAMPIONS Paródia Suíte 14 Henrique Diego ft Mc Guimê.mp3">clique aqui</a> para baixar a musica em seu navegador</p>
+    </audio>
+</body>
+</html>
