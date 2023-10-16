@@ -25,11 +25,12 @@ body{
 }
 
 header{
+    min-height: 100px;
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
     background-color: var(--cor2);
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 header > h1{
@@ -60,6 +61,12 @@ section#joaninha{
     background-position: center right;
     background-size: cover;
     padding: 40px 10px;
+}
+
+p.imagem{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.403);
+    padding: 10px 10px 10px 0px;
 }
 
 section#folhas{
