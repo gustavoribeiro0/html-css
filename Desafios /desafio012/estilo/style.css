@@ -20,60 +20,82 @@
     --fonte-padrao: arial, helvetica, sans-serif;
 }
 
-body{
-    
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte-padrao);
 }
 
 header{
-    min-height: 100px;
-    font-family: var(--fonte-titulo);
-    font-size: 1.5em;
     background-color: var(--cor2);
+    font-family: var(--fonte-titulo);
+    color: white;
     text-align: center;
-    padding-top: 20px;
+    font-size: 1.7em;
 }
 
 header > h1{
-    color: white;
+    padding-top: 30px;
+    font-variant: small-caps;
 }
 
-header > a{
+header > p{
+    padding-bottom: 30px;
+    font-size: 0.7em;
+}
+
+header a, footer a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-header > a:hover{
+header a:hover, footer a:hover{
     color: white;
     text-decoration: underline;
 }
 
-main{
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
     font-family: var(--fonte-poesia);
-    font-size: 2em;
+    font-size: 4vh;
 }
 
-main > section{
-    padding: 40px 10px;
+section > p {
+    padding-bottom: 2em;
 }
 
-section#joaninha{
-    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
-    background-position: center right;
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.592);
+    color: black;
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
     background-size: cover;
-    padding: 40px 10px;
 }
 
-p.imagem{
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+section.imagem > p{
     display: inline-block;
-    background-color: rgba(128, 128, 128, 0.403);
-    padding: 10px 10px 10px 0px;
-}
-
-section#folhas{
-    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
-    padding: 40px 10px;
-    background-position: center center;
-    background-size: cover;
+    padding: 5px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.164);
 }
 
 footer{
