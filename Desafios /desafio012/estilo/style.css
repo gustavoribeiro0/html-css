@@ -75,7 +75,6 @@ section.normal {
 }
 
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.592);
     color: black;
     background-attachment: fixed;
 }
@@ -95,7 +94,7 @@ section.imagem > p{
     display: inline-block;
     padding: 5px;
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: rgba(255, 255, 255, 0.317);
 }
 
 footer{
